@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "playfair display";
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    background: whitesmoke;
+    height: 60px;
+}
+
+.nav-flex{
+    display: flex;
+    height: 60px;
+}
+
+.nav-logo a{
+    font-size: 2rem;
+    padding: 40px;
+    font-family: "dancing script";
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul.button{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul.button li a{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+ul.botton li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #C58940;
+  }
+
+ul.button li a:hover{
+    background: #C58940;
+    color: aliceblue;
+}
+/* end nav */
+
+#banner{
+    height: 400px;
+    background: url(../Originals/banner1.jpg);
+    background-size: cover;
+}
+
+.banner-title{
+    width: 600px;
+    padding: 80px;
+    
+}
+
+.banner-title h2{
+    font-family: "dancing script";
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+    background: whitesmoke;
+}
+
+.banner-title p{
+    background: whitesmoke;
+    padding-bottom: 30px;
+    text-align: center;
+}
+/* end banner */
+
+#macaroon {
+    padding: 30px;
+}
+.macaroon-title{
+    text-align: center;
+    padding: 30px;
+}
+
+.macaroon-title h2{
+    font-family: "playfair display";
+}
+
+.macaroon-flex{
+    display: flex;
+}
+
+.macaroon-item{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.macaroon-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px rgba(0, 0, 0, 0.2);
+}
+.macaroon-item img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.macaroon-item h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.macaroon-item a{
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    border:2px solid #C58940;
+    padding: 5px 10px;
+    color: black;
+    text-align: center;
+}
+
+.macaroon-item a:hover{
+    background: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* end menu */
+
+#fev-flavour{
+    text-align: center;
+}
+
+.flavour-title{
+    padding-top: 100px;
+}
+
+.flavour-flex{
+    display: flex;
+}
+
+.flavour-item img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 5rem;
+    transition: .3s;
+}
+
+.flavour-item img:hover{
+    transform: translateY(-10px);
+}
+
+/* .flavour-item img:nth-child(1){
+    margin-left: 50px;
+} */
+
+.flavour-item-title{
+    width: 400px;
+    height: 300px;
+    
+}
+
+.flavour-item-title h3{
+    text-align: center;
+    left: 5rem;
+    margin-top: 200px;
+}
+/* end flavour */
+
+#order{
+    height: 650px;
+    padding: 30px;
+}
+
+.order-title {
+    text-align: center;
+    padding: 30px;
+}
+
+.order-title h2{
+    font-family: "playfair display";
+}
+
+.order-flex{
+    display: flex;
+    background: #EEEEEE;
+}
+
+.order-item{
+    display: flex;
+}
+
+.order-item img{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.order-item-title{
+    padding: 100px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.order-item-title h3{
+    font-family: "playfair display";
+    font-weight: bold;
+}
+
+.order-item-title a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid #C58940;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.order-item-title a:hover{
+    padding: 5px 10px;
+    background: black;
+    color: white;
+}
+/* end order */
+
+#promotion {
+    height: 420px;
+    padding: 30px;
+}
+
+.promotion-flex{
+    height: 300px;
+    display: flex;
+    background: #F7C8E0;
+}
+
+.promotion-item{
+    height: 300px;
+    padding: 30px;
+}
+.promotion-item img{
+    height: 300px;
+    width: 500px;
+}
+
+.promotion-item-title{
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+}
+
+.promotion-item-title h2{
+    padding: 15px;
+    font-family: "playfair display";
+}
+/* end promotion */
+
+footer{
+    text-align: center;
+    background: #898AA6;
+}
+
+.footer-title h2{
+    text-align: center;
+    padding: 20px;
+}
+.form{
+    width: 50%;
+    height: 300px;
+    float: left;
+    text-align: center;
+}
+
+
+/* end footer */
+
+/* reserve page */
+
+#reserve{
+    padding: 3rem;
+    height: 650px;
+    background: url(../Originals/banner18.jpg);
+    background-size: cover;
+}
+
+.form-title{
+    text-align: center;
+    padding: 30px;
+}
+
+.form{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; 
+    margin-bottom: 10px;     
+}
+
+.form label{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.form input{
+    padding: 10px 20px;
+}
+
+.form button{
+    border: none;
+    margin-top: 10px;
+    border: 2px solid #C58940;
+    color: black;
+    background: white;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.form button:hover{
+    background: black;
+    padding: 10px 25px;
+    color: white;
+}
+
+/* creamy page */
+
+#allproduct{
+    padding: 3rem;
+    height: 550px;
+    width: 100%;
+}
+
+.all-title{
+    text-align: center;
+    overflow: auto;
+}
+
+.product-nav{
+    float: left;
+    padding-top: 20px;
+    font-size: .8rem;
+}
+
+.all-flex{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+}
+
+.all-flex-item{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    /* border: 2px solid gray; */
+    padding: 20px;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+
+.all-flex-item:hover{
+    transform: translateY(-10px);
+    /* box-shadow: 2px rgba(0, 0, 0, 0.2); */
+}
+.all-flex-item img{
+    width: 30%;
+    height: 150px;
+}
+
+.all-flex-item h4{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.all-flex-item p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* end creamy */
+
+@media screen and (max-width: 480px) {
+
+    nav{
+        height: 150px;
+    }
+
+    .nav-flex{
+        display: block;
+    }
+
+    .nav-logo{
+        text-align: center;
+        padding: 20px;
+    }
+
+    ul.button{
+        justify-content: center;
+    }
+/* end nav */
+    #banner{
+        height: 300px;
+        width: 100%;
+    }
+    
+    .banner-title {
+        width: 100%;
+    }
+    /* end banner */
+    #macaroon{
+        width: 100%;
+    }
+    .macaroon-flex{
+        display: block;
+        width: 100%;
+    }
+
+    .macaroon-item{
+        width: 100%;
+        text-align: center;
+    }
+    .macaroon-item img{
+        height: 50%;
+        width: 100%;
+    }
+
+    .macaroon-item h3{
+        padding: 10px;
+    }
+
+    /* menu */
+    #fev-flavour{
+        width: 100%;
+    }
+
+    .flavour-flex{
+        width: 100%;
+        height: 200px;
+    }
+
+    .flavour-item{
+        width: 50%;
+        height: 300px;
+    }
+    .flavour-item img{
+        width: 80%;
+        height: 30%;
+    }
+
+    .flavour-item-title {
+        width: 50%;
+        height: 0;
+        margin-left: 4rem;
+    }
+
+    .flavour-item img{
+        width: 100;
+        height: 100;
+    }
+
+    .flavour-item img:nth-child(1){
+        width: 60%;
+        height: 100px;
+    }
+
+    .flavour-item img:nth-child(2){
+        width: 50%;
+        height: 160px;
+    }
+
+    .flavour-item img:nth-child(3){
+        width: 70%;
+        height: 100px;
+    }
+
+    .flavour-item-title h3{
+        margin-top: 120px;
+    }
+
+/* end best flavour */
+    #order{
+        height: 800px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .order-flex{
+        display: block;
+        width: 100%;
+    }
+
+    .order-item{
+        display: block;
+        width: 100%;
+    }
+
+    .order-item img{
+        width: 100%;
+        height: 420px;
+        display: block;
+    }
+
+    .order-item-title{
+        padding: 15px;
+        width: 100%;
+        height: 250px;
+    }
+
+/* end order */
+    #promotion{
+        height: 700px;
+        width: 100%;
+    }
+
+    .promotion-flex{
+        height: 600px;
+        display: block;
+        width: 100%;
+    }
+
+    .promotion-item{
+        padding: 0;
+        width: 100%;
+    }
+
+    .promotion-item-title{
+        width: 100%;
+    }
+
+    .promotion-item img{
+        width: 100%;
+        height: 300px;
+    }
+
+    /* all product */
+
+    .all-flex{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .product-nav{
+        width: 100%;
+        text-align: center;
+    }
+
+    .all-flex-item img{
+        width: 60%;
+        height: 150px;
+    }
+
+    /* reserve */
+
+    #reserve{
+        width: 100%;
+        height: 700px;
+    }
+
+    ul.form{
+        width: 100%;
+        font-size: .8rem;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form button{
+        text-align: center;
+    }
+
+    .form label{
+        width: 100%;
+    }
+}

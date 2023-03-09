@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora";
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#banner{
+    height: 500px;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+}
+
+/* end banner */
+#info{
+    height: 300px;
+}
+
+.info-title{
+    padding: 50px;
+    text-align: center;
+}
+
+.info-title p{
+    margin-top: 15px;
+}
+
+.info-title h4{
+    font-family: "lobster";
+    color: #FF9494;
+    padding: 20px;
+}
+
+.info-title a{
+    border-radius: 6px;
+    background: darkred;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.info-title a:hover{
+    background: black;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+/* end info */
+
+#topsale {
+    height: 750px;
+    background: #FFE3E1;
+}
+
+.topsale-title{
+    height: 150px;
+    text-align: center;
+    padding: 30px;
+}
+
+.topsale-title h4{
+    padding: 10px;
+    color: red;
+}
+
+.topsale-flex{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topsale-item{
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.topsale-item img{
+    width: 250px;
+    height: 350px;
+}
+
+.topsale-item h3{
+    margin-top: 10px;
+}
+
+.topsale-item p{
+    margin-top: 10px;
+}
+
+span.price{
+    margin-left: 1rem;
+    color: red;
+    text-decoration: line-through;
+}
+/* end topsale */
+.button{
+    text-align: center;
+    padding: 30px;
+}
+.button a{
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: darkred;
+    color: white;
+    border-radius: 6px;
+}
+
+.button a:hover{
+    background: black;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+/* end tour */
+
+#offer{
+    height: 400px;
+}
+
+.offer-title{
+    text-align: center;
+    padding: 50px;
+}
+
+.offer-title h4{
+    color: red;
+    padding: 10px;
+}
+
+.offer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-item{
+    justify-content: center;
+    padding: 3rem;
+    margin-left: 47px;
+}
+
+.offer-item img{
+    width: 100%;
+    height: 80px;
+}
+
+.offer-item p{
+    margin-top: 15px;
+    text-align: center;
+}
+/* end offer */
+
+footer{
+    height: 160px;
+    background: #FFE3E1;
+}
+
+.footer-info p:nth-child(1){
+    font-size: .7rem;
+}
+ul.social-item{
+    list-style: none;
+    display: flex;
+    justify-content: center;    
+}
+
+ul.social-item li{
+    padding: .5rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul.social-item li i{
+    color: black;
+}
+
+.footer-info{
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-info p{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 480px){
+    #banner{
+        height: 200px;
+    }
+
+    #info{
+        height: 310px;
+    }
+    .info-title h2{
+        font-size: 1.2rem;
+    }
+
+    #topsale{
+        height: 2000px;
+    }
+
+    .topsale-flex{
+        height: 1780px;
+        display: block;
+    }
+
+    .topsale-item img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .topsale-item{
+        text-align: center;
+    }
+
+    #offer{
+        height: 1100px;
+    }
+
+    .offer-flex{
+        display: block;
+        text-align: center;
+    }
+
+    .offer-item{
+        margin-left: 0;
+    }
+
+    .offer-item img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .footer-info{
+        padding: 0;
+    }
+}
